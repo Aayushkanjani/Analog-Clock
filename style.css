@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  background-image: url(64b9451865a683fd39bccfa1_5f6e93d250a6d04f4eae9f02_Backgrounds-WFU-thumbnail-\(size\).jpeg);
+}
+
+.page-header {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #333;
+  border-radius: 50%;
+  position: relative;
+}
+
+.hour, .min, .sec {
+  background: black;
+  position: absolute;
+  transform-origin: 50% 100%;
+}
+
+.hour {
+  width: 6px;
+  height: 50px;
+  top: 50px;
+  left: 97px;
+  z-index: 4;
+}
+
+.min {
+  width: 4px;
+  height: 70px;
+  top: 30px;
+  left: 98px;
+  z-index: 3;
+}
+
+.sec {
+  width: 2px;
+  height: 90px;
+  top: 10px;
+  left: 99px;
+  z-index: 2;
+}
+
+/* Optional: Style the center dot */
+.clock::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+  border-radius: 50%;
+  top: 94px;
+  left: 94px;
+  z-index: 5;
+}
